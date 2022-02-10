@@ -1,1 +1,9 @@
-[![Hello]((https://www.img.youtube.com/vi/wDVteayWWvU/0.jpg))](https://www.youtube.com/watch?v=wDVteayWWvU)
+# MRS-ITS Simulator
+
+<p style='text-align: justify;'> Multi-Robot Systems (MRS) – Intelligent Transportation Systems (ITS) simulator acts as a visualization tool created by the Multi-Robot Systems (MRS) research group. It is constructed to visualize the multi-vehicles' system performance in terms of their mobility  in several ITS applications such as vehicle platooning, intersection management, vehicle routing, and others appraising traffic problems such as traffic congestion, safety, pollution and fuel consumption. Numerical analysis including modeling and controlling vehicles are performed offline. Results from the numerical simulations are then visualized using the MRS-ITS simulator. </p>
+
+<p style='text-align: justify;'> For now, MRS-ITS does not focus on the communication impairments or information losses between vehicles as it is only used for visualization purposes to test the controllers performance in an assumed ideal environment. It operates based on the architecture shown, by which the road is initialized to include the number of lanes and width of each lane. Vehicles are initialized to include their dimensions to be able to draw its 3D and 2D schematic. The number of simulated vehicles is assigned, each vehicle is placed on the road at its initial position and orientation. Each vehicle receives the vehicle's states including the longitudinal and lateral global positions (X,Y) as well as the yaw angle &psi;. These states are used to transform the vehicle's c.g. position and orientation by the help of the system's homogeneous transformation and rotation matrices derived for the vertices and frames of the vehicle to update its pose accordingly. </p>
+
+![Alt text](simulation_architecture.PNG?raw=true "Title")
+
+The imported package includes the codes for vehicles and road initialization, in addition to the main function to visualize several senarios that are performed addressing the vehicle platooning problem that can be shown through https://www.youtube.com/watch?v=bb5lTS8xGwM&list=PL669j5Xx6qBtG80vkFVQPfFP0Gwj1ZLLX.
